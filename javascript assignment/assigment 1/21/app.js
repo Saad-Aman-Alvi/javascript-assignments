@@ -1,0 +1,9 @@
+  // Step 1: Declare two numbers
+        let num1 = 10;
+        let num2 = 20;
+
+        // Step 2: Add them and store in a new variable
+        let sum = num1 + num2;
+
+        // Step 3: Display the result in the browser
+        document.getElementById("result").innerText = "The sum of " + num1 + " and " + num2 + " is: " + sum;

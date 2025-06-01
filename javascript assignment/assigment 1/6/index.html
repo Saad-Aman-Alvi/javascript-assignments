@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 5 - Script Placement</title>
+
+    <!-- a. Head: Script runs immediately as the browser parses the head -->
+    <script>
+        alert("Script in HEAD section");
+    </script>
+</head>
+
+<body>
+
+    <!-- b. Body (before page’s visible HTML) -->
+    <script>
+        alert("Script BEFORE page content in BODY");
+    </script>
+
+    <!-- c. Body (inside your page’s visible HTML) -->
+    <h1>Welcome to My Project</h1>
+    <p>This is a sample paragraph.</p>
+    <button onclick="alert('You clicked the button!')">Click Me</button>
+
+    <!-- d. Body (after your page's HTML) -->
+    <script>
+        alert("Script AFTER page content in BODY");
+    </script>
+
+</body>
+</html>

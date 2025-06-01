@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Variable Expression Evaluation</title>
+</head>
+<body>
+
+    <h2>JavaScript Expression Evaluation</h2>
+    <p><b>Expression:</b> <code>var a = 2, b = 1; var result = --a - --b + ++b + b--;</code></p>
+
+    <h3>Step-by-Step Explanation:</h3>
+    <ul>
+        <li><code>Initial values: a = 2, b = 1</code></li>
+        <li><code>--a</code>: Pre-decrement → <code>a</code> becomes 1</li>
+        <li><code>--b</code>: Pre-decrement → <code>b</code> becomes 0</li>
+        <li><code>++b</code>: Pre-increment → <code>b</code> becomes 1</li>
+        <li><code>b--</code>: Post-decrement → Value used is 1, then <code>b</code> becomes 0</li>
+        <li><code>Expression:</code> <code>--a - --b + ++b + b--</code> becomes <code>1 - 0 + 1 + 1 = 3</code></li>
+    </ul>
+
+    <h3>Final Results:</h3>
+    <p id="results"></p>
+
+ <script src="app.js"></script>
+</body>
+</html>

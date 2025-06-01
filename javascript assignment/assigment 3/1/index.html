@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City Greeting</title>
+</head>
+<body>
+
+    <h2>City Welcome Message</h2>
+    <p id="message"></p>
+
+    <script>
+        // Prompt user for city name
+        let city = prompt("Enter your city name:");
+
+        // Convert input to lowercase for case-insensitive comparison
+        if (city && city.toLowerCase() === "karachi") {
+            alert("Welcome to city of lights");
+            document.getElementById("message").innerText = "Welcome to city of lights";
+        } else {
+            alert("Welcome!");
+            document.getElementById("message").innerText = "Welcome!";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visitor Counter</title>
+</head>
+<body>
+    <h1 id="visitMessage"></h1>
+
+    <script>
+        // Step 1: Get current count from localStorage
+        let visitCount = localStorage.getItem("visitCount");
+
+        // Step 2: Check if it's the first visit
+        if (visitCount === null) {
+            visitCount = 1;
+        } else {
+            visitCount = parseInt(visitCount) + 1;
+        }
+
+        // Step 3: Save updated count back to localStorage
+        localStorage.setItem("visitCount", visitCount);
+
+        // Step 4: Display the message
+        document.getElementById("visitMessage").innerHTML =
+            "You have visited this site " + visitCount + " times.";
+    </script>
+</body>
+</html>

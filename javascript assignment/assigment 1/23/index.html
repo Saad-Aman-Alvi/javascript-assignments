@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Expressions</title>
+</head>
+<body>
+
+    <h2>JavaScript Mathematical Expressions</h2>
+
+    <p id="stepB"></p>
+    <p id="stepD"></p>
+    <p id="stepF"></p>
+    <p id="stepH"></p>
+    <p id="stepJ"></p>
+    <p id="stepK"></p>
+
+    <script>
+        // a. Declare a variable
+        let number;
+
+        // b. Show value after declaration
+        document.getElementById("stepB").innerText = "Value after variable declaration is: " + number;
+
+        // c. Initialize with a number
+        number = 5;
+
+        // d. Show initial value
+        document.getElementById("stepD").innerText = "Initial value: " + number;
+
+        // e. Increment the variable
+        number++;
+
+        // f. Show value after increment
+        document.getElementById("stepF").innerText = "Value after increment is: " + number;
+
+        // g. Add 7 to the variable
+        number += 7;
+
+        // h. Show value after addition
+        document.getElementById("stepH").innerText = "Value after addition is: " + number;
+
+        // i. Decrement the variable
+        number--;
+
+        // j. Show value after decrement
+        document.getElementById("stepJ").innerText = "Value after decrement is: " + number;
+
+        // k. Show remainder after dividing by 3
+        let remainder = number % 3;
+        document.getElementById("stepK").innerText = "The remainder is: " + remainder;
+    </script>
+
+</body>
+</html>

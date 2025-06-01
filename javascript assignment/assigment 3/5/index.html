@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guess Game</title>
+</head>
+<body>
+
+<script>
+  // Store a secret number between 1 and 10
+  var secretNumber = 4;
+
+  // Prompt user for a guess
+  var userGuess = +prompt("Guess the secret number (1-10)");
+
+  // Check conditions
+  if (userGuess === secretNumber) {
+    alert("Bingo! Correct answer");
+  } else if (userGuess + 1 === secretNumber || userGuess - 1 === secretNumber) {
+    alert("Close enough to the correct answer");
+  } else {
+    alert("Wrong guess. Try again!");
+  }
+</script>
+
+</body>
+</html>

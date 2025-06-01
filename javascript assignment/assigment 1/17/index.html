@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Info</title>
+</head>
+<body>
+
+    <div id="orderMessage"></div>
+
+    <script>
+        // a. Visitor's name
+        let visitorName = "John Doe";
+
+        // b. Product title
+        let productTitle = "T-shirt";
+
+        // c. Quantity
+        let quantity = 5;
+
+        // Create the message
+        let message = visitorName + " ordered " + quantity + " " + productTitle + "(s) on XYZ Clothing store";
+
+        // Display the message on the page
+        document.getElementById("orderMessage").innerText = message;
+    </script>
+
+</body>
+</html>

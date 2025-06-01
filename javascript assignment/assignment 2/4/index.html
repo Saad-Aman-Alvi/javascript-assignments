@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Table</title>
+</head>
+<body>
+
+    <h2>Multiplication Table</h2>
+    <p id="tableOutput"></p>
+
+    <script>
+        // Prompt user for a number
+        let userInput = prompt("Enter a number to display its multiplication table:", "5");
+
+        // Convert input to number, fallback to 5 if empty or invalid
+        let number = parseInt(userInput);
+        if (isNaN(number)) {
+            number = 5;
+        }
+
+        // Generate multiplication table
+        let table = "";
+        for (let i = 1; i <= 10; i++) {
+            table += number + " x " + i + " = " + (number * i) + "<br>";
+        }
+
+        // Display table in browser
+        document.getElementById("tableOutput").innerHTML = table;
+    </script>
+
+</body>
+</html>
